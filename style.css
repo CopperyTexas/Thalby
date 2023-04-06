@@ -306,7 +306,45 @@ html {
 .detail_box {
     background-color: rgba(204, 204, 204, 0.3);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
-    padding: 84px 170px;
+    padding: 80px 192px;
+}
+
+.detail_box:nth-child(2n) {
+    grid-template-columns: 60% 40%;
+    background-color: rgba(204, 204, 204, 0.6);
+    ;
+}
+
+.detail_box:nth-child(2n) .detail_text {
+    grid-row: 1;
+    text-align: end;
+}
+
+.detail_text {
+    padding-top: 62px;
+    padding-right: 100px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.detail_text h4 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 46px;
+}
+
+.detail_text .text {
+    margin-bottom: 40px;
+}
+
+.shop_link {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000;
 }
