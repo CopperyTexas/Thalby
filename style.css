@@ -13,13 +13,7 @@
 
 /* Links */
 
-a,
-a:link,
-a:visited {
-    /* color: inherit; */
-    text-decoration: none;
-    /* display: inline-block; */
-}
+
 
 a:hover {
     /* color: inherit; */
@@ -228,6 +222,91 @@ html {
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
+    text-decoration: none;
 
     color: #FFFFFF;
+}
+
+.what_we_do {
+    padding: 60px 108px 0px 108px;
+}
+
+.about_text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+}
+
+.about_text h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 28px;
+}
+
+.about_text .text {
+    margin: 0 auto 48px auto;
+    max-width: 650px;
+}
+
+.best_sellers {
+    padding-top: 88px;
+    padding-bottom: 52px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.sellers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.seller_box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.seller_img {
+    margin-bottom: 40px;
+}
+
+.seller_box h4 {
+    max-width: 160px;
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.price {
+    margin-bottom: 18px;
+}
+
+.add_to_cart {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000;
+    text-decoration-line: underline;
+    margin-bottom: 248px;
+}
+
+.more_detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail_box {
+    background-color: rgba(204, 204, 204, 0.3);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 84px 170px;
 }
