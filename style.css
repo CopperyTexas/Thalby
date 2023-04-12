@@ -119,7 +119,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 180px;
+  padding: 18px;
 }
 
 .header_list {
@@ -132,7 +132,7 @@ html {
 }
 
 .header_logo {
-  margin-left: 84px;
+  margin: auto;
 }
 
 .header_logo_list {
@@ -361,13 +361,83 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 110px;
   padding: 0 188px 162px 188px;
 }
 .feature {
   width: 338px;
-  text-align: center;
   padding: 0 100px;
 }
-.feature .text::after {
-  content: url("data:image/svg+xml; utf8, <тут_код_svg>");
+.feature .text::before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: #18a5c6;
+  display: block;
+  align-items: center;
+  margin: 0 auto 26px auto;
+}
+.feature .text::before:first-child {
+  background-color: red;
+}
+
+.feature .text {
+  text-align: center;
+}
+.interviews {
+  padding-bottom: 78px;
+  position: relative;
+}
+.interviews::before {
+  content: "";
+  width: 100%;
+  height: 57%;
+  background-color: #f0f0f0;
+  position: absolute;
+  top: 43%;
+  z-index: -1;
+}
+.interviews h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+  max-width: 705px;
+  margin: 0 auto 102px auto;
+}
+.interviews_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.about_interviews {
+  max-width: 288px;
+  text-align: center;
+}
+.about_interviews .text {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 44px;
+}
+.interviews_img {
+  margin-bottom: 35px;
+}
+.about_interviews blockquote {
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 40px;
+}
+.interviews_link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
 }
