@@ -28,3 +28,8 @@ if (isMobile.any()) {
 } else {
     document.body.classList.add("_pc");
 }
+$(document).ready(function () {
+    $('.header_burger').click(function (event) {
+        $('.header_burger, .header_list').toggleClass('active');
+    });
+});
