@@ -28,8 +28,21 @@ if (isMobile.any()) {
 } else {
     document.body.classList.add("_pc");
 }
-$(document).ready(function () {
-    $('.header_burger').click(function (event) {
-        $('.header_burger, .header_list').toggleClass('active');
+const headerBurger = document.querySelector('.header_burger')
+if (headerBurger) {
+    const headerList = document.querySelector('.header_list');
+    headerBurger.addEventListener("click", function (e) {
+        headerBurger.classList.toggle('_active');
+        headerList.classList.toggle('_active');
     });
-});
+}
+
+
+const headerHamburger = document.querySelector('.header_hamburger')
+if (headerHamburger) {
+    const headerLogoList = document.querySelector('.header_logo_list');
+    headerHamburger.addEventListener("click", function (e) {
+        headerHamburger.classList.toggle('_active_burger');
+        headerLogoList.classList.toggle('_active_burger');
+    });
+}
