@@ -112,7 +112,8 @@ html {
 
 .page_container {
   max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;
+  margin: auto;
 }
 
 .main_header {
@@ -201,11 +202,11 @@ html {
 
 /* initial box style start */
 .initial_box {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   background-color: #f0efeb;
-  background-size: 100%;
   padding-top: 60px;
 }
 
@@ -217,6 +218,10 @@ html {
 
 .initial_img {
   padding-left: 74px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .initial_text h2 {
@@ -654,7 +659,11 @@ html {
 .header_burger {
   visibility: hidden;
 }
-
+@media (max-width: 1440px) {
+  .page_container {
+    padding: 0 20px 0 20px;
+  }
+}
 @media (max-width: 767px) {
   .header_burger {
     display: block;
