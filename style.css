@@ -338,7 +338,7 @@ html {
 .detail_box {
     background-color: rgba(204, 204, 204, 0.3);
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
     padding: 80px 192px;
 }
